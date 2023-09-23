@@ -1,4 +1,10 @@
 @import url("https//fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  height: 100%;
-    width: 100%;
+  /* height: 100%; */
+  width: 100%;
 }
 .print-area {
     width: 80%;
@@ -20,11 +26,15 @@ body {
 }
 .print-area .header {
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
     background-color: rgb(30,30,40);
     display: flex;
     align-items: center;
     position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2cm;
 }
 /* .content {
     display: flex;
@@ -58,8 +68,8 @@ body {
 }
 .profileText .imgBox {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -74,7 +84,7 @@ body {
 
 .profileText h2 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -87,10 +97,11 @@ body {
   line-height: 0.5em;
 }
 .contactInfo {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .title {
   color: #fff;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -106,12 +117,13 @@ body {
 }
 .contactInfo ul li .icon {
   display: inline-block;
-  width: 30px;
+  width: 24px;
   font-size: 18px;
   color: #03a9f4;
 }
 .contactInfo ul li span {
   color: #fff;
+  font-size: 12px;
   font-weight: 300;
 }
 .contactInfo.education li {
@@ -154,6 +166,9 @@ body {
 .about {
   margin-bottom: 50px;
 }
+.about p {
+  font-size: 16px;
+}
 .about:last-child {
   margin-bottom: 0;
 }
@@ -161,6 +176,7 @@ body {
   color: #003147;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 p {
@@ -178,6 +194,7 @@ p {
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 .about .box .text h4 {
   text-transform: uppercase;
@@ -224,28 +241,7 @@ p {
   color: #03a9f4;
   font-size: 18px;
   width: 20px;
-}
-
-@media (max-width: 1000px) {
-  .interest ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    margin: 10px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .about .box {
-    flex-direction: column;
-  }
-  .about .box .yearCompany {
-    min-width: 15px;
-    margin-bottom: 5px;
-  }
-  .skills .box {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  margin-right: 5px;
 }
 
 button {
@@ -266,14 +262,49 @@ button:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
+/* 
+@media screen {
+  @page {
+  size: A4;
+  margin: 0;
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .yearCompany {
+    min-width: 15px;
+    margin-bottom: 5px;
+  }
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
+
 @media print {
-  body *  {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  /* body *  {
       visibility: hidden;
-    }
+    } */
   * {
      visibility: hidden;
    }
+   .container {
+    box-shadow: none;
+   }
   .prent-area * {
        visibility: visible;
+       /* margin: 0; */
    }
 }
