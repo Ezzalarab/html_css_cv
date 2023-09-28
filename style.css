@@ -164,7 +164,7 @@ body {
   padding: 40px;
 }
 .about {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .about p {
   font-size: 16px;
@@ -201,17 +201,33 @@ p {
   color: #2a7da2;
   font-size: 16px;
 }
-.skills .box {
+.skills {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 45% 10% 45%;
+}
+.divider {
+  width: 10px;
+  color: red;
+  height: 200px;
+}
+.primarySkills, .secondarySkills {
+  position: relative;
+  width: 100%;
+}
+.skills .box {
+  position: relative;
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 100px 1fr;
   justify-content: center;
   align-items: center;
 }
 .skills .box h4 {
   text-transform: uppercase;
   color: #848c99;
+  font-size: 14px;
   font-weight: 500;
 }
 .skills .box .percent {
