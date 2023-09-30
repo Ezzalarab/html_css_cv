@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* height: 100%; */
   width: 100%;
 }
@@ -48,17 +48,17 @@ body {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: 1000px;
+  /* min-height: 1000px; */
   margin: auto;
   background: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1); */
 }
 .container .leftSide {
   position: relative;
   background: #003147;
-  padding: 40px;
+  padding: 20px;
 }
 .profileText {
   position: relative;
@@ -169,9 +169,10 @@ body {
   padding: 40px;
 }
 .about {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .about p {
+  margin-top: 5px;
   font-size: 16px;
   line-height: 150%;
 }
@@ -183,7 +184,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-top: 5px;
 }
 p {
   color: #333;
@@ -191,10 +192,11 @@ p {
 .about .box {
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .about .box .yearCompany {
-  min-width: 150px;
+  min-width: 120px;
+  max-width: 120px;
 }
 .about .box .yearCompany h5 {
   text-transform: uppercase;
@@ -202,16 +204,64 @@ p {
   font-weight: 600;
   margin-bottom: 5px;
 }
+
+.about .box .yearCompany h5:nth-child(2) {
+  margin-left: 30px;
+  font-size: large;
+  font-weight:bold;
+}
+
 .about .box .text h4 {
   text-transform: uppercase;
   color: #2a7da2;
   font-size: 16px;
+  margin-bottom: 5px;
+}
+.about .box .text div {
+  margin-bottom: 5px;
+}
+.about .box .text span {
+  font-size: 14px;
+}
+.about .box .text span a {
+  font-weight: 600;  
+}
+
+.about .achievement .date {
+  min-width: 120px;
+  max-width: 120px;
+}
+.about .date h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+
+.skills {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+}
+.divider {
+  width: 10px;
+  color: red;
+  height: 200px;
+}
+.primarySkills, .secondarySkills {
+  position: relative;
+  width: 100%;
 }
 .skills .box {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  padding: 3px 0;
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 100px 1fr;
   justify-content: center;
   align-items: center;
   padding: auto;
@@ -220,6 +270,7 @@ p {
 .skills .box h4 {
   text-transform: uppercase;
   color: #848c99;
+  font-size: 14px;
   font-weight: 500;
 }
 .skills .box .percent {
@@ -308,11 +359,11 @@ button:hover {
   * {
      visibility: hidden;
    }
-   .container {
-    box-shadow: none;
-   }
   .prent-area * {
-       visibility: visible;
-       /* margin: 0; */
+    visibility: visible;
+    max-height: 1300px;
+   }
+   .container {
+    max-height: 950px;
    }
 }
