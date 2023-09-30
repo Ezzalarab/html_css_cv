@@ -1,15 +1,17 @@
-@import url("https//fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-
 @page {
   size: A4;
   margin: 0;
 }
+@font-face {
+  font-family: Cairo;
+  src: url(static/Cairo-Regular.ttf);
+}
 
 * {
+  font-family: Cairo;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body {
   background: lightblue;
@@ -76,7 +78,7 @@ body {
 .profileText .imgBox img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -84,7 +86,7 @@ body {
 
 .profileText h2 {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-top: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -92,9 +94,12 @@ body {
   line-height: 1.4em;
 }
 .profileText h2 span {
-  font-size: 0.7em;
-  font-weight: 300;
+  font-size: 0.8em;
+  font-weight: 500;
   line-height: 0.5em;
+}
+.profileText h2 span:last-child {
+  font-size: 0.6em;
 }
 .contactInfo {
   padding-top: 20px;
@@ -113,7 +118,7 @@ body {
 .contactInfo ul li {
   position: relative;
   list-style: none;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .contactInfo ul li .icon {
   display: inline-block;
@@ -153,7 +158,7 @@ body {
 .contactInfo.language .percent div {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
   background-color: #03a9f4;
 }
@@ -168,6 +173,7 @@ body {
 }
 .about p {
   font-size: 16px;
+  line-height: 150%;
 }
 .about:last-child {
   margin-bottom: 0;
@@ -208,6 +214,8 @@ p {
   grid-template-columns: 150px 1fr;
   justify-content: center;
   align-items: center;
+  padding: auto;
+  margin: 10px;
 }
 .skills .box h4 {
   text-transform: uppercase;
@@ -223,7 +231,7 @@ p {
 .skills .box .percent div {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
   background: #03a9f4;
 }
@@ -241,13 +249,13 @@ p {
   color: #03a9f4;
   font-size: 18px;
   width: 20px;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 button {
   font-size: 25px;
   padding: 10px 20px;
-  margin: 50px 0 50px 14px;
+  margin: 50px 14px 50px 0;
   background-color: rgb(80,80,80);
   border: none;
   outline: none;
