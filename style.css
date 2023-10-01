@@ -106,11 +106,11 @@ body {
 }
 .title {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .contactInfo ul {
   position: relative;
@@ -141,9 +141,10 @@ body {
 }
 .contactInfo.education li h4:nth-child(1) {
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
 .contactInfo.education li h4 {
+  font-size: 14px;
   color: #fff;
   font-weight: 300;
 }
@@ -169,10 +170,10 @@ body {
   padding: 40px;
 }
 .about {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .about p {
-  margin-top: 5px;
+  /* margin-top: 5px; */
   font-size: 16px;
   line-height: 150%;
 }
@@ -184,7 +185,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
-  margin-top: 5px;
+  font-weight: 600;
 }
 p {
   color: #333;
@@ -195,18 +196,18 @@ p {
   margin: 10px 0;
 }
 .about .box .yearCompany {
-  min-width: 120px;
-  max-width: 120px;
+  min-width: 100px;
+  max-width: 100px;
+  text-align:right;
 }
 .about .box .yearCompany h5 {
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .about .box .yearCompany h5:nth-child(2) {
-  margin-left: 30px;
   font-size: large;
   font-weight:bold;
 }
@@ -215,28 +216,29 @@ p {
   text-transform: uppercase;
   color: #2a7da2;
   font-size: 16px;
-  margin-bottom: 5px;
 }
 .about .box .text div {
   margin-bottom: 5px;
 }
 .about .box .text span {
   font-size: 14px;
+  margin-left: 15px;
 }
 .about .box .text span a {
-  font-weight: 600;  
+  font-weight: 600;
 }
 
 .about .achievement .date {
-  min-width: 120px;
-  max-width: 120px;
+  min-width: 100px;
+  max-width: 100px;
+  text-align:right;
 }
 .about .date h5 {
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
   margin-bottom: 10px;
-  padding-right: 10px;
+  padding-left: 10px;
 }
 
 
@@ -361,7 +363,7 @@ button:hover {
    }
   .prent-area * {
     visibility: visible;
-    max-height: 1300px;
+    /* max-height: 1500px; */
    }
    .container {
     max-height: 950px;
